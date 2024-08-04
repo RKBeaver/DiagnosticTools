@@ -7,4 +7,5 @@ Channel A = Incylinder Pressure Sensor
 Channel B = Crankshaft Flywheel Pickup Signal. 
 
 The number of crankteeth is defined in the first section of the script. 
+The script will not work with a n+1 tooth arrangement, ie the crankshaft pickup signal must not contain a missing tooth. 
 
