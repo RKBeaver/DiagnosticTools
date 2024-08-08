@@ -1,8 +1,8 @@
-Diagnostic Tools
+##Diagnostic Tools
 
 This repository contains a selection of the Python scipts and functions I've developed for processing data from primarily a PicoScope oscilliscope and DiaSys (an engine interface software)
 
-Incylinder Pressure Comparator:
+###Incylinder Pressure Comparator:
 
 This script processes a 2 channel recording of a pressure measurement from within the cylinder of a natural gas spark ignition engine taken during a dry crank. 
     
