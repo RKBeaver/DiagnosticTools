@@ -17,12 +17,12 @@ Depending on cranking speed the time domain might need to be adjusted.
 Channel A = Incylinder Pressure Sensor.   
 Channel B = Crankshaft Flywheel Pickup Signal. 
 
-The number of crankteeth is defined in the first section of the script. 
+The number of crankteeth is defined in the first section of the script.   
 The script will not work with a n+1 tooth arrangement, ie the crankshaft pickup signal must not contain a missing tooth. 
 
 For reference:-
 MTU 4000 Series - 182 teeth
 
-I have found that if after taking the recording you apply any filters or carry out any math functions the Matlab file generation can often get corrupted. 
+I have found that if after taking the recording you apply any filters or carry out any math functions within Picoscope the Matlab file generation can often get corrupted. 
 
 Copy the Matlab file into the Input folder. 
