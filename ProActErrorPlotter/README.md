@@ -1,10 +1,10 @@
 ## Function
 
-These programs take feedback data from Woodward ProAct throttle actuators, either via DiaSys or directly off the CAN network, manipulates it and plots the calculated error. 
+These scripts take feedback data from Woodward ProAct throttle actuators, either via DiaSys or directly off the CAN network, manipulates it and then plots the calculated error. 
 
 ## Hardware
 
-I am using a PEAK CAN FD Interface. The program has been written with this soley in mind. 
+I am using a PEAK CAN FD Interface. The program has been written with this solely in mind. 
 
 ## Collecting & Exporting Data via DiaSys
 
@@ -50,13 +50,13 @@ Select the following available sensors -
 
 Export to Uniplot - Set to Off.
 
-Sampling time - Set "!Sampling time:" to 100ms. 
+Sampling time - Set "Sampling time:" to 100ms. 
 
 Click Save As
 
 Select the Save as type: filetype as "Microsoft Text Driver". 
 
-I find it works best if I save to the main dictionary in a USB drive. 
+I find it works best if I save to the main directory of a USB memory stick. 
 
 Ensure you define the filetype as .csv when typing in the filename. 
 
@@ -71,9 +71,9 @@ Copy the exported CSV file into the CSVInputFiles folder within the ProAct Error
 MTU CAN network operates at 250Kbit/s. To clarify this is not the same CAN network you connect to when using DiaSys. You want to connect to the inner network between the ECU, ProActs, TecJet, AKC, Ignition etc. 
 The proprietary CAN network in the Cummins QSK60 operates at 500Kbits/s. 
 
-Its important that when you connect to either network that your interface is set to passive (listen only/no transmission). 
+Its important that when you connect to either network that your interface is set to passive (listen only/no transmission). The scripts are set to do this automatically for Peak interfaces
 
-Select the relevant script depending on the engine your connected to. The MTU script will automatically adjust for reading from a single throttle V8 variant and the twin throttle variants. 
+Select the relevant script depending on the engine you're connected to. The MTU script will automatically adjust for reading from a single throttle V8 variant and the twin throttle V12 - V20 variants. 
 
 Upon running the script you will be prompted for a filename as well as a desired recording duration in mins. Once inputted the script will just run until that duration has been fulfilled. 
 The program outputs a percentage status update. 
